@@ -161,7 +161,7 @@
               <h3>PAN ARTESANAL</h3>
               <p class="price">$150 MXN</p>
               <p class="description">Hecho a mano con masa madre e ingredientes naturales. Corteza crujiente, miga suave y sabor auténtico.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+              <button type="button" class="btn card" onclick="openModal('modaL-PAN-ARTESANAL')">Ver producto</button>
             </div>
         </article>
 
@@ -176,7 +176,7 @@
               <h3>PAN INTEGRAL</h3>
               <p class="price">$160 MXN</p>
               <p class="description">"Hecho a mano con grano entero y masa madre. Un pan nutritivo, de miga suave y con el sabor real del cereal.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+              <button type="button" class="btn card" onclick="openModal('modaL-PAN-INTEGRAL')">Ver producto</button>
             </div>
             </article>
 
@@ -318,7 +318,9 @@
             <li><i data-lucide="instagram"></i> <a href="https://www.instagram.com/cl.pamela_?avpt=MXhnYzlxNDdtM21pOA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">@Pan_pam</a></li>
             <li><i data-lucide="facebook"></i> <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">PAM PAN</a></li>
             <li><i data-lucide="mail"></i> <a href="mailto:dp.campa@ebc.edu.mx">dp.campa@ebc.edu.mx</a></li>
-            <li><i data-lucide="clock-3"></i> Lunes a Domingo, 09:00 a 19:00</li>
+            <li><i data-lucide="map"></i> <a href="https://maps.app.goo.gl/KJsaLtjCvWE4tD6F6"> C. Cerro de las Campanas
+</a></li>
+            <li><i data-lucide="clock-3"></i> Lunes a Viernes, 14:00 a 17:00 </li>
           </ul>
         </aside>
       </div>
@@ -328,14 +330,62 @@
 
 
   
-
+<!--- footer 0 PIE DE PAGINA-->
   <!-- Pie de página -->
   <footer class="site-footer">
     <p>© <span id="current-year"></span> PAN PAM. Todos los derechos reservados.</p>
     <a href="#inicio">Volver arriba ↑</a>
-  </footer>
+</footer>
+
+  <!--- MODAL PARA LOS PRODUCTOS 0 SERVICIOS, ETC -->
+<div id="modaL-PAN-ARTESANAL" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-PAN-ARTESANAL">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/PAN.jpeg" alt="Caja de regalo rosa con chocolates y listón.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-PAN-ARTESANAL')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-">PAN ARTESANAL</h2>
+        <p class="price">$150 MXN</p>
+        <p>Disfruta de nuestro pan artesanal recién horneado, con una corteza crujiente, un interior suave y ese sabor casero que hace especial cada momento.</p>
+        <h3>Lo que lo hace especial:</h3>
+        <ul>
+        <li>Ingredientes de calidad.</li>
+        <li>Elaborado de manera artesanal.</li>
+        <li>Recién horneado y hecho con amor.</li>
+      </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir un pan artesanal. ¿Me ayudan con mi pedido?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+<!--- MODAL PARA LOS PRODUCTOS 2 SERVICIOS, ETC -->
+<div id="modaL-PAN-INTEGRAL" class="modal" role="dialog" aria-modal="true" aria-labelledby="modaL-PAN-INTEGRAL">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/PANIN.jpeg" alt="Caja de regalo rosa con chocolates y listón.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modaL-PAN-INTEGRAL')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modaL-PAN-INTEGRAL">PAN INTEGRAL</h2>
+        <p class="price">$160 MXN</p>
+        <p>Disfruta de nuestro delicioso panini preparado con pan artesanal, ingredientes frescos y queso derretido. Una combinación crujiente y llena de sabor.</p>
+
+      <h3>Lo que lo hace especial:</h3>
+      <ul>
+        <li>Pan artesanal crujiente.</li>
+        <li>Ingredientes frescos y deliciosos.</li>
+        <li>Preparado al momento con amor.</li>
+      </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir un panini. ¿Me ayudan con mi pedido?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+
 
 <script src="js/script.js"></script>
+
 
 
 <!-- fin del HERO-->
